@@ -6,6 +6,7 @@
     <title>Vibe | Home</title>
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/output.css" />
+    <link rel="stylesheet" href="./styles/locomotive-scroll.css" />
   </head>
   <body>
     <!-- Enobong starts here -->
@@ -103,5 +104,13 @@
     </footer>
     <!-- Joshua stops here -->
     <script src="index.js"></script>
+
+    <!-- Initialize Locomotive Scroll -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+    <script>
+      (function () {
+        const locomotiveScroll = new LocomotiveScroll();
+      })();
+    </script>
   </body>
 </html>

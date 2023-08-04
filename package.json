@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/joshuaedo/vibbe/issues"
   },
-  "homepage": "https://github.com/joshuaedo/vibbe#readme"
+  "homepage": "https://github.com/joshuaedo/vibbe#readme",
+  "dependencies": {
+    "locomotive-scroll": "^5.0.0-beta.8"
+  }
 }
