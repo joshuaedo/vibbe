@@ -1,0 +1,26 @@
+{
+  "name": "vibbe",
+  "version": "1.0.0",
+  "description": "Welcome to Vibbe, the innovative platform at the intersection of music and blockchain technology",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshuaedo/vibbe.git"
+  },
+  "keywords": [
+    "vibbe",
+    "blockchain",
+    "music",
+    "nft",
+    "airdrop"
+  ],
+  "author": "joshua edo, enobong ekanem",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joshuaedo/vibbe/issues"
+  },
+  "homepage": "https://github.com/joshuaedo/vibbe#readme"
+}
