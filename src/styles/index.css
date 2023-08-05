@@ -157,7 +157,7 @@ header {
 /* Genesis */
 
 .genesis-nft {
-  background: url('../public/images/genesis-nft-banner.png');
+  background: url('../../public/images/genesis-nft-banner.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -166,7 +166,7 @@ header {
 /* Tokenomics */
 
 .tokenomics-graph {
-  background: url('../public/images/tokenomics.png');
+  background: url('../../public/images/tokenomics.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
