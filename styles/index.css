@@ -48,7 +48,8 @@ body::-webkit-scrollbar {
   border-radius: 100px;
   opacity: 0.3;
   background: #09251e;
-  padding: 35px 40px;
+  padding: 0 40px;
+  z-index: -1;
 }
 
 .flex {
@@ -57,10 +58,14 @@ body::-webkit-scrollbar {
   align-items: center;
   height: 100%;
 }
-
+.centered-line{
+  display: block;
+  text-align: center;
+}
 .logo {
-  display: flex;
-  padding: 0;
+ width: 178px;
+ height: 60px;
+ z-index: 1;
 }
 
 .group {
@@ -74,7 +79,7 @@ body::-webkit-scrollbar {
   height: 36px;
   flex-shrink: 0;
   position: absolute;
-  top: 45px;
+  top: -45px;
   left: 50px;
 }
 
@@ -84,17 +89,13 @@ img {
   flex-shrink: 0;
 }
 
-.logo-vibbe {
-  color: #fff;
-  font-family: 'Poppins';
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
+.navbar{
+  padding: 20px 0 0 0;
 
+}
 .navbar ul {
   display: flex;
+  align-items: center;
   list-style: none;
   color: #f5fbf2;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -110,25 +111,21 @@ img {
   color: #845979;
 }
 
-.navbar a {
-  padding: 10px;
-  margin: 0 5px;
-}
+ .navbar ul li {
+  margin: 0 30px;
+} 
 
-.navbar .flex {
-  justify-content: space-between;
-}
 
-button {
+.btn {
   background-color: #513da5;
-  /* padding: 24px 48px; */
   border-radius: 5px;
   border: 1px solid #835978;
+  padding: 20px 20px;
 }
 
 /* Navbar css ends */
 
-/* header css */
+/* hero section css */
 header {
   display: flex;
 }
@@ -146,13 +143,29 @@ header {
 }
 
 .welcome {
-  color: #fff;
-  text-align: center;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+  overflow-wrap: break-word;
+  width:500px;
 }
+/* hero section ends */
+
+/* header section css */
+.font-size{
+  font-size: 36px;
+}
+.discover{
+  width:867px ;
+}
+.second-logo{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  right: 33%; 
+  margin-top: 200px;
+}
+
+
+
+
+
 
 /* Genesis */
 
