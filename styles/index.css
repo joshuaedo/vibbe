@@ -75,48 +75,6 @@ body::-webkit-scrollbar {
 
 /* Navbar css starts */
 
-/* .nav-logo {
-  width: 11.125rem;
-  height: 3.75rem;
-  z-index: 1;
-} */
-
-/* .group {
-  width: 60px;
-  height: 60px;
-  flex-shrink: 0;
-} */
-
-/* .vector {
-  width: 37px;
-  height: 36px;
-  flex-shrink: 0;
-  position: absolute;
-  top: -45px;
-  left: 50px;
-} */
-
-/* targeting all the images like this is bad practice */
-/* img {
-  width: 250px;
-  height: 250px;
-  flex-shrink: 0;
-} */
-/* 
-.navbar ul {
-  display: flex;
-  align-items: center;
-  list-style: none;
-}
-
-.navbar ul a:hover {
-  color: #845979;
-}
-
-.navbar ul li {
-  margin: 0 30px;
-} */
-
 .btn {
   background-color: #513da5;
   border-radius: 5px;
@@ -153,7 +111,9 @@ header {
   right: 33%;
   margin-top: 200px;
 }
-
+.airdrop-text{
+  width: 1250px;
+}
 
 
 
