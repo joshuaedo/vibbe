@@ -74,17 +74,10 @@ body::-webkit-scrollbar {
 }
 
 /* Navbar css starts */
-.navbar-container {
-  border-radius: 100px;
-  opacity: 0.3;
-  background: #09251e;
-  padding: 0 40px;
-  z-index: -1;
-}
 
 .nav-logo {
-  width: 178px;
-  height: 60px;
+  width: 11.125rem;
+  height: 3.75rem;
   z-index: 1;
 }
 
@@ -109,10 +102,6 @@ body::-webkit-scrollbar {
   height: 250px;
   flex-shrink: 0;
 } */
-
-.navbar {
-  padding: 20px 0 0 0;
-}
 
 .navbar ul {
   display: flex;

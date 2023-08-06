@@ -31,26 +31,24 @@
 <body class="text-white">
 
   <!-- Enobong starts here -->
-  <header class="navbar flex justify-center items-center overflow-hidden">
+  <header class="flex justify-center items-center overflow-hidden">
     <p class="section-bg-title mt-24">
       <span class="text-center hidden xl:block">GROOVE</span>
       <span class="text-center hidden xl:block">MUSIC</span>
     </p>
     <!-- container & flex are default css classes in tailwind and should not be used as custom classes -->
     <!-- <div class="container flex"> -->
-    <div class="navbar-container flex justify-center items-center h-full">
+    <div class="w-full opacity-30 rounded-full bg-[#09251e] -z-1 px-20 py-5 flex justify-between items-center">
       <!-- try to avoid generic names like logo, group etc so debugging is easier -->
       <!-- <div class="logo"> -->
       <div class="nav-logo">
         <img src="./public/images/vibbe-logo.png" alt="logo" class="nav-logo" />
       </div>
-      <nav class="overflow-hidden">
-        <ul>
-          <li><a href="">Docs</a></li>
-          <li><a href="">Explore</a></li>
-          <li><a href="">Community</a></li>
-          <button class="btn">Connect wallet</button>
-        </ul>
+      <nav class="flex items-center space-x-14">
+        <span><a href="">Docs</a></span>
+        <span><a href="">Explore</a></span>
+        <span><a href="">Community</a></span>
+        <button class="btn">Connect wallet</button>
       </nav>
     </div>
   </header>
