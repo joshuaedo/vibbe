@@ -7,7 +7,6 @@
   <title>Vibbe | Home</title>
   <link rel="icon" href="../public/images/Vector.svg" />
   <link rel="stylesheet" href="./styles/index.css" />
-  <link rel="stylesheet" href="./styles/output.css" />
   <link rel="stylesheet" href="./styles/locomotive-scroll.css" />
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -29,17 +28,21 @@
   <meta name="twitter:image" content="https://joshuaedo.sirv.com/vibbe/1.png" />
 </head>
 
-<body class="">
+<body class="text-white">
 
   <!-- Enobong starts here -->
-  <div class="navbar overflow-hidden">
-    <p class="section-bg-title mt-24 ">
-      GROOVE <br />
-      <span class="centered-line">MUSIC</span>
+  <header class="navbar flex justify-center items-center overflow-hidden">
+    <p class="section-bg-title mt-24">
+      <span class="text-center hidden xl:block">GROOVE</span>
+      <span class="text-center hidden xl:block">MUSIC</span>
     </p>
-    <div class="container flex">
-      <div class="logo">
-        <img src="./public/images/vibbe-logo.png" alt="logo" class="logo" />
+    <!-- container & flex are default css classes in tailwind and should not be used as custom classes -->
+    <!-- <div class="container flex"> -->
+    <div class="navbar-container flex justify-center items-center h-full">
+      <!-- try to avoid generic names like logo, group etc so debugging is easier -->
+      <!-- <div class="logo"> -->
+      <div class="nav-logo">
+        <img src="./public/images/vibbe-logo.png" alt="logo" class="nav-logo" />
       </div>
       <nav class="overflow-hidden">
         <ul>
@@ -50,34 +53,37 @@
         </ul>
       </nav>
     </div>
-  </div>
+  </header>
 
   <main class="">
-    <header class="flex justify-around items-center">
-      <img src="../public/images/woman-with-headset.png" alt="" class="woman" />
-      <img src="../public/images/back-button.png" alt="backward-button" class="play" />
-      <img src="../public/images/forward-button.png" alt="forward-button" class="play" />
-      <p class="welcome">
-        Welcome to VIBBE, the innovative platform at the intersection of music
-        and Blockchain technology.
+    <section class="xl:flex justify-center items-center">
+      <div class="flex justify-center items-center">
+        <img src="../public/images/woman-with-headset.png" alt="" class="xl:h-[32rem] xl:w-[32rem]" />
+      </div>
+      <div class="flex items-center justify-evenly">
+        <img src="../public/images/back-button.png" alt="backward-button" class="play" />
+        <img src="../public/images/forward-button.png" alt="forward-button" class="play" />
+      </div>
+      <p class="whitespace-normal xl:min-w-[31rem]">
+        Welcome to VIBBE, the innovative platform at the intersection of music and Blockchain technology.
       </p>
-    </header>
+    </section>
 
     <section>
-      <p class="flex whitespace-normal text-white text-center font-size">
+      <p class="flex whitespace-normal  text-center font-size">
         "Step into a new era of music creation, powered by <br />
         the blockchain"
       </p>
-      <div class="flex mt-8">
-        <img src="./public/images/Vector (1).png" alt="" />
+      <div class="flex mt-8 items-center justify-center">
         <img src="./public/images/Vector (2).png" alt="" />
-        <img src="./public/images/Vector (3).png" alt="" />
-        <img src="./public/images/Vector (4).png" alt="" />
-        <img src="./public/images/Vector (4).png" alt="" />
-        <img src="./public/images/Vector (3).png" alt="" />
+        <img src="./public/images/Vector (3).png" alt="" class="hidden md:flex" />
+        <img src="./public/images/Vector (4).png" alt="" class="hidden lg:flex" />
+        <img src="./public/images/Vector (4).png" alt="" class="hidden lg:flex" />
+        <img src="./public/images/Vector (3).png" alt="" class="hidden md:flex" />
+        <img src="./public/images/Vector (1).png" alt="" class="hidden xl:flex" />
       </div>
       <div class="flex mt-20 items-center justify-center">
-        <p class="discover text-center font-size text-white">
+        <p class="discover text-center font-size ">
           Discover the power of decentralized music, where artists and fans
           come together in a transparent and secure environment. Join us on
           this revolutionary journey to reshape the music industry.
@@ -114,7 +120,7 @@
     <!-- Enobong stops here -->
 
     <!-- Josh starts here -->
-    <section class="text-white font-bold my-[16rem]">
+    <section class=" font-bold my-[16rem]">
       <div class="w-full h-[23.2rem] text-4xl">
         <div class="genesis-nft w-full h-[19rem] flex justify-center items-center">
           <p class="">GENESIS NFT<br />COLLECTION</p>
@@ -125,7 +131,7 @@
       </div>
     </section>
 
-    <section class="text-white font-bold mb-[13.2rem]">
+    <section class=" font-bold mb-[13.2rem]">
       <div class="w-full text-center overflow-hidden">
         <h2 class="text-5xl uppercase">Tokenomics</h2>
         <h3 class="text-3xl">Total Supply</h3>
@@ -137,7 +143,7 @@
       </div>
     </section>
 
-    <section class="text-white font-bold">
+    <section class=" font-bold">
       <h2 class="text-5xl text-center">ROADMAP</h2>
       <div class="h-[43.125rem] relative overflow-hidden">
         <p class="section-bg-title">ROADMAP</p>
@@ -170,7 +176,7 @@
       </div>
     </section>
 
-    <section class="text-white text-center">
+    <section class=" text-center">
       <div class="flex justify-center items-center mb-[10.3rem]">
         <img src="../public/images/melodies-banner.png" alt="melodies-banner"
           class="h-[33rem] w-[44rem] object-contain" />
@@ -194,7 +200,7 @@
     </section>
   </main>
 
-  <footer class="text-white m-10 text-xl font-medium flex justify-between">
+  <footer class=" m-10 text-xl font-medium flex justify-between">
     <div>
       <p>© 2021 VIBBE. All Rights Reserved.</p>
     </div>

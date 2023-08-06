@@ -44,8 +44,37 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.section-bg-title {
+  color: rgba(254, 254, 254, 0.07);
+  font-family: 'Open Sans';
+  font-size: 26rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+@media only screen and (max-width: 600px) {
+  .section-bg-title {
+    font-size: 10rem;
+    font-weight: 700;
+  }
+}
+
+.section-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
 /* Navbar css starts */
-.container {
+.navbar-container {
   border-radius: 100px;
   opacity: 0.3;
   background: #09251e;
@@ -53,46 +82,38 @@ body::-webkit-scrollbar {
   z-index: -1;
 }
 
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-.centered-line {
-  display: block;
-  text-align: center;
-}
-.logo {
+.nav-logo {
   width: 178px;
   height: 60px;
   z-index: 1;
 }
 
-.group {
+/* .group {
   width: 60px;
   height: 60px;
   flex-shrink: 0;
-}
+} */
 
-.vector {
+/* .vector {
   width: 37px;
   height: 36px;
   flex-shrink: 0;
   position: absolute;
   top: -45px;
   left: 50px;
-}
+} */
 
-img {
+/* targeting all the images like this is bad practice */
+/* img {
   width: 250px;
   height: 250px;
   flex-shrink: 0;
-}
+} */
 
 .navbar {
   padding: 20px 0 0 0;
 }
+
 .navbar ul {
   display: flex;
   align-items: center;
@@ -129,22 +150,12 @@ header {
   display: flex;
 }
 
-.woman {
-  width: 523px;
-  height: 523px;
-  flex-shrink: 0;
-}
-
 .play {
   width: 89px;
   height: 89px;
   flex-shrink: 0;
 }
 
-.welcome {
-  overflow-wrap: break-word;
-  width: 500px;
-}
 /* hero section ends */
 
 /* header section css */
@@ -179,28 +190,7 @@ header {
   background-size: contain;
 }
 
-.section-bg-title {
-  color: rgba(254, 254, 254, 0.07);
-  font-family: 'Open Sans';
-  font-size: 25.96525rem;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-  overflow: hidden;
-}
-
-.section-logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-}
+/* Community */
 
 .community-logo {
   position: absolute;
