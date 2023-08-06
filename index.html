@@ -41,10 +41,10 @@
     <div class="w-full opacity-30 rounded-full bg-[#09251e] -z-1 px-20 py-5 flex justify-between items-center">
       <!-- try to avoid generic names like logo, group etc so debugging is easier -->
       <!-- <div class="logo"> -->
-      <div class="nav-logo">
-        <img src="./public/images/vibbe-logo.png" alt="logo" class="nav-logo" />
+      <div class="w-[9rem] md:w-[11rem] h-[3rem] md:h-[4rem] z-1 flex items-center">
+        <img src="./public/images/vibbe-logo.png" alt="logo" class="object-contain" />
       </div>
-      <nav class="flex items-center space-x-14">
+      <nav class="hidden lg:flex items-center space-x-14">
         <span><a href="">Docs</a></span>
         <span><a href="">Explore</a></span>
         <span><a href="">Community</a></span>
@@ -54,17 +54,19 @@
   </header>
 
   <main class="">
-    <section class="xl:flex justify-center items-center">
+    <section class="xl:flex justify-evenly items-center">
       <div class="flex justify-center items-center">
         <img src="../public/images/woman-with-headset.png" alt="" class="xl:h-[32rem] xl:w-[32rem]" />
       </div>
-      <div class="flex items-center justify-evenly">
+      <div class="flex items-center justify-center space-x-5 mb-24">
         <img src="../public/images/back-button.png" alt="backward-button" class="play" />
         <img src="../public/images/forward-button.png" alt="forward-button" class="play" />
       </div>
-      <p class="whitespace-normal xl:min-w-[31rem]">
-        Welcome to VIBBE, the innovative platform at the intersection of music and Blockchain technology.
-      </p>
+      <div class="flex justify-center items-center text-center">
+        <p class="w-[32rem] h-[12rem] text-4xl font-medium">
+          Welcome to VIBBE, the innovative platform at the intersection of music and Blockchain technology.
+        </p>
+      </div>
     </section>
 
     <section>
