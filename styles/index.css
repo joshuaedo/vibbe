@@ -32,6 +32,7 @@ body {
     #08050b 94.09%
   );
   font-family: 'Kodchasan';
+  overflow: hidden !important;
 
   /* Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none; /* IE and Edge */
@@ -58,14 +59,14 @@ body::-webkit-scrollbar {
   align-items: center;
   height: 100%;
 }
-.centered-line{
+.centered-line {
   display: block;
   text-align: center;
 }
 .logo {
- width: 178px;
- height: 60px;
- z-index: 1;
+  width: 178px;
+  height: 60px;
+  z-index: 1;
 }
 
 .group {
@@ -89,9 +90,8 @@ img {
   flex-shrink: 0;
 }
 
-.navbar{
+.navbar {
   padding: 20px 0 0 0;
-
 }
 .navbar ul {
   display: flex;
@@ -111,10 +111,9 @@ img {
   color: #845979;
 }
 
- .navbar ul li {
+.navbar ul li {
   margin: 0 30px;
-} 
-
+}
 
 .btn {
   background-color: #513da5;
@@ -144,28 +143,23 @@ header {
 
 .welcome {
   overflow-wrap: break-word;
-  width:500px;
+  width: 500px;
 }
 /* hero section ends */
 
 /* header section css */
-.font-size{
+.font-size {
   font-size: 36px;
 }
-.discover{
-  width:867px ;
+.discover {
+  width: 867px;
 }
-.second-logo{
+.second-logo {
   position: absolute;
   transform: translate(-50%, -50%);
-  right: 33%; 
+  right: 33%;
   margin-top: 200px;
 }
-
-
-
-
-
 
 /* Genesis */
 
@@ -197,6 +191,7 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
+  overflow: hidden;
 }
 
 .section-logo {
