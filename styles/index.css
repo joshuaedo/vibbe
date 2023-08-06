@@ -30,6 +30,7 @@ body {
       #1b1630 72.65%,
       #08050b 94.09%);
   font-family: 'Kodchasan';
+  overflow: hidden !important;
 
   /* Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none;
@@ -43,8 +44,37 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.section-bg-title {
+  color: rgba(254, 254, 254, 0.07);
+  font-family: 'Open Sans';
+  font-size: 26rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+@media only screen and (max-width: 600px) {
+  .section-bg-title {
+    font-size: 10rem;
+    font-weight: 700;
+  }
+}
+
+.section-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
 /* Navbar css starts */
-.container {
+.navbar-container {
   border-radius: 100px;
   opacity: 0.3;
   background: #09251e;
@@ -52,27 +82,21 @@ body::-webkit-scrollbar {
   /* z-index: -1; */
 }
 
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-.centered-line {
-  display: block;
-  text-align: center;
-}
-
-.logo {
+.nav-logo {
   width: 178px;
   height: 60px;
+  z-index: 1;
 }
+
+/* .group {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+} */
 
 .navbar {
   padding: 20px 0 0 0;
 }
-
 .navbar ul {
   display: flex;
   align-items: center;
@@ -86,7 +110,6 @@ body::-webkit-scrollbar {
 .navbar ul li {
   margin: 0 30px;
 }
-
 
 .btn {
   background-color: #513da5;
@@ -103,47 +126,29 @@ header {
   display: flex;
 }
 
-.woman {
-  width: 523px;
-  height: 523px;
-  flex-shrink: 0;
-}
-
 .play {
   width: 89px;
   height: 89px;
   flex-shrink: 0;
 }
 
-.welcome {
-  overflow-wrap: break-word;
-  width: 500px;
-}
-
 /* hero section ends */
 
 /* header section css */
-.font-size {
+.font-size{
   font-size: 36px;
 }
-
-.wave {
-  width: 250px;
-  height: 55px;
-}
-
 .discover {
   width: 867px;
 }
-
-.second-v-logo {
-  width: 550px;
-  height: 550px;
+.second-logo {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  right: 33%;
+  margin-top: 200px;
 }
 
-.airdrop-text{
-  width: 1250px;
-}
+
 
 
 
@@ -166,27 +171,7 @@ header {
   background-size: contain;
 }
 
-.section-bg-title {
-  color: rgba(254, 254, 254, 0.07);
-  font-family: 'Open Sans';
-  font-size: 25.96525rem;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-}
-
-.section-logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-}
+/* Community */
 
 .community-logo {
   position: absolute;

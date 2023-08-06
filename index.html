@@ -7,7 +7,6 @@
   <title>Vibbe | Home</title>
   <link rel="icon" href="../public/images/Vector.svg" />
   <link rel="stylesheet" href="./styles/index.css" />
-  <link rel="stylesheet" href="./styles/output.css" />
   <link rel="stylesheet" href="./styles/locomotive-scroll.css" />
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -18,10 +17,9 @@
   <!-- OpenGraph  -->
   <meta property="og:title" content="Vibbe" />
   <meta property="og:description" content="Where NFTs, Music, Blockchain Harmony Resonate." />
-  <meta property="og:site_name" content="vibbe" />
+  <meta property="og:site_name" content="Vibbe" />
   <meta property="og:type" content="website" />
   <meta property="og:image:url" content="https://joshuaedo.sirv.com/vibbe/1.png" />
-
   <!-- Twitter  -->
   <meta name="twitter:title" content="Vibbe" />
   <meta name="twitter:description" content="Where NFTs, Music, Blockchain Harmony Resonate." />
@@ -30,41 +28,51 @@
   <meta name="twitter:image" content="https://joshuaedo.sirv.com/vibbe/1.png" />
 </head>
 
-<body>
+<body class="text-white">
+
   <!-- Enobong starts here -->
-  <div class="navbar">
-    <!-- Navbar -->
-    <p class="section-bg-title mt-24">GROOVE <br> <span class="centered-line">MUSIC</span></p>
-    <div class="container flex">
-      <div class="logo">
-        <img src="./public/images/vibbe-logo.png" alt="logo" class="logo">
+  <header class="navbar flex justify-center items-center overflow-hidden">
+    <p class="section-bg-title mt-24">
+      <span class="text-center hidden xl:block">GROOVE</span>
+      <span class="text-center hidden xl:block">MUSIC</span>
+    </p>
+    <!-- container & flex are default css classes in tailwind and should not be used as custom classes -->
+    <!-- <div class="container flex"> -->
+    <div class="navbar-container flex justify-center items-center h-full">
+      <!-- try to avoid generic names like logo, group etc so debugging is easier -->
+      <!-- <div class="logo"> -->
+      <div class="nav-logo">
+        <img src="./public/images/vibbe-logo.png" alt="logo" class="nav-logo" />
       </div>
-      <nav>
-        <ul >
-          <li ><a href="">Docs</a></li>
+      <nav class="overflow-hidden">
+        <ul>
+          <li><a href="">Docs</a></li>
           <li><a href="">Explore</a></li>
           <li><a href="">Community</a></li>
           <button class="btn">Connect wallet</button>
         </ul>
       </nav>
     </div>
-  </div>
+  </header>
 
   <main class="">
-    <header class="flex justify-around items-center">
-      <!-- Hero -->
-      <img src="./public/images/download (1) 1.png" alt="" class="woman" />
-      <img src="../public/images/back-button.png" alt="backward-button" class="play" />
-      <img src="../public/images/forward-button.png" alt="forward-button" class="play" />
-      <p class="welcome ">
-        Welcome to VIBBE, the innovative platform at the intersection of music
-        and Blockchain technology.
+    <section class="xl:flex justify-center items-center">
+      <div class="flex justify-center items-center">
+        <img src="../public/images/woman-with-headset.png" alt="" class="xl:h-[32rem] xl:w-[32rem]" />
+      </div>
+      <div class="flex items-center justify-evenly">
+        <img src="../public/images/back-button.png" alt="backward-button" class="play" />
+        <img src="../public/images/forward-button.png" alt="forward-button" class="play" />
+      </div>
+      <p class="whitespace-normal xl:min-w-[31rem]">
+        Welcome to VIBBE, the innovative platform at the intersection of music and Blockchain technology.
       </p>
-    </header>
+    </section>
 
     <section>
-      <p class="flex whitespace-normal text-white text-center font-size">
-        "Step into a new era of music creation, powered by <br> the blockchain"
+      <p class="flex whitespace-normal  text-center font-size">
+        "Step into a new era of music creation, powered by <br />
+        the blockchain"
       </p>
       <!-- Waves Image -->
       <div class="flex mt-8">
@@ -74,22 +82,29 @@
         <img src="./public/images/wave(4).png" alt=""class="wave">
         <img src="./public/images/wave(4).png" alt=""class="wave">
         <img src="./public/images/wave(3).png" alt=""class="wave">
+      <div class="flex mt-8 items-center justify-center">
+        <img src="./public/images/Vector (2).png" alt="" />
+        <img src="./public/images/Vector (3).png" alt="" class="hidden md:flex" />
+        <img src="./public/images/Vector (4).png" alt="" class="hidden lg:flex" />
+        <img src="./public/images/Vector (4).png" alt="" class="hidden lg:flex" />
+        <img src="./public/images/Vector (3).png" alt="" class="hidden md:flex" />
+        <img src="./public/images/Vector (1).png" alt="" class="hidden xl:flex" />
       </div>
-      <div class="flex my-20 items-center justify-center">
-        <p class="discover text-center font-size text-white">
-          Discover the power of decentralized music, where artists and fans come
-          together in a transparent and secure environment. Join us on this
-          revolutionary journey to reshape the music industry.
+      <div class="flex mt-20 items-center justify-center">
+        <p class="discover text-center font-size ">
+          Discover the power of decentralized music, where artists and fans
+          come together in a transparent and secure environment. Join us on
+          this revolutionary journey to reshape the music industry.
         </p>
       </div>
-      <!-- Logo with Waves -->
       
       <div class="flex items-center justify-center ">
         <img src="./public/images/Group 159@2x.png" alt="second-logo" class="second-v-logo" />
       </div>
     </section>
 
-    <section>
+
+    <section class="overflow-hidden">
       <div class="h-[18.118rem] relative">
         <p class="section-bg-title">AIRDROP</p>
         <h2 class="mb-1 uppercase text-5xl text-white font-bold text-center">airdrop</h2>
@@ -105,7 +120,8 @@
         <button>Claim Airdrop</button>
       </div>
     </section>
-    <section>
+
+    <section class="overflow-hidden">
       <h2>FEATURES</h2>
       <div>
         <div></div>
@@ -119,7 +135,7 @@
     <!-- Enobong stops here -->
 
     <!-- Josh starts here -->
-    <section class="text-white font-bold my-[16rem]">
+    <section class=" font-bold my-[16rem]">
       <div class="w-full h-[23.2rem] text-4xl">
         <div class="genesis-nft w-full h-[19rem] flex justify-center items-center">
           <p class="">GENESIS NFT<br />COLLECTION</p>
@@ -130,8 +146,8 @@
       </div>
     </section>
 
-    <section class="text-white font-bold mb-[13.2rem]">
-      <div class="w-full text-center">
+    <section class=" font-bold mb-[13.2rem]">
+      <div class="w-full text-center overflow-hidden">
         <h2 class="text-5xl uppercase">Tokenomics</h2>
         <h3 class="text-3xl">Total Supply</h3>
         <h3 class="text-2xl text-[#c1a7cd]">10 Billion $VIBBE</h3>
@@ -142,9 +158,9 @@
       </div>
     </section>
 
-    <section class="text-white font-bold">
+    <section class=" font-bold">
       <h2 class="text-5xl text-center">ROADMAP</h2>
-      <div class="h-[43.125rem] relative">
+      <div class="h-[43.125rem] relative overflow-hidden">
         <p class="section-bg-title">ROADMAP</p>
         <img src="../public/images/roadmap.png" alt="roadmap" class="section-logo" />
       </div>
@@ -175,7 +191,7 @@
       </div>
     </section>
 
-    <section class="text-white text-center">
+    <section class=" text-center">
       <div class="flex justify-center items-center mb-[10.3rem]">
         <img src="../public/images/melodies-banner.png" alt="melodies-banner"
           class="h-[33rem] w-[44rem] object-contain" />
@@ -189,7 +205,7 @@
     </section>
 
     <section>
-      <div class="h-[43.125rem] relative">
+      <div class="h-[43.125rem] relative overflow-hidden">
         <p class="section-bg-title">COMMUNITY</p>
         <div class="community-logo flex items-center justify-center">
           <img src="../public/images/second-logo.png" alt="fourth-logo" class="h-[20.2rem] w-[20.2rem] mt-10" />
@@ -199,7 +215,7 @@
     </section>
   </main>
 
-  <footer class="text-white m-10 text-xl font-medium flex justify-between">
+  <footer class=" m-10 text-xl font-medium flex justify-between">
     <div>
       <p>© 2021 VIBBE. All Rights Reserved.</p>
     </div>
@@ -215,18 +231,16 @@
       </div>
     </div>
   </footer>
-
   <!-- Joshua stops here -->
 
   <script src="index.js"></script>
-
-  <!-- Initialize Locomotive Scroll -->
   <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
   <script>
     (function () {
       const locomotiveScroll = new LocomotiveScroll();
     })();
   </script>
+
 </body>
 
 </html>
