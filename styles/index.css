@@ -47,6 +47,7 @@ body::-webkit-scrollbar {
 }
 
 section {
+  overflow: hidden !important;
   /* Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none;
   /* IE and Edge */
@@ -85,6 +86,29 @@ section::-webkit-scrollbar {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
+}
+
+.gradient-outline {
+  border: double 1px transparent;
+  font-size: 36px;
+  font-weight: 400;
+  border-radius: 0.7rem;
+  position: relative;
+}
+.gradient-outline::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  background: linear-gradient(
+    to bottom,
+    rgba(2, 89, 77, 1),
+    rgba(82, 61, 167, 1)
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
 }
 
 /* Navbar css starts */
@@ -141,28 +165,8 @@ header {
   padding: 24px 90px;
 }
 
-.features-card {
+.features-card__blur {
   backdrop-filter: blur(25px);
-  border: double 1px transparent;
-  font-size: 36px;
-  font-weight: 400;
-  border-radius: 0.7rem;
-  position: relative;
-}
-.features-card::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: 1rem;
-  padding: 0.5rem;
-  background: linear-gradient(
-    to bottom,
-    rgba(2, 89, 77, 1),
-    rgba(82, 61, 167, 1)
-  );
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
 }
 
 .features-grid {
