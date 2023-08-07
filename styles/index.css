@@ -24,11 +24,13 @@
 }
 
 body {
-  background: linear-gradient(135deg,
-      #1b1630 24.67%,
-      #060407 51.93%,
-      #1b1630 72.65%,
-      #08050b 94.09%);
+  background: linear-gradient(
+    135deg,
+    #1b1630 24.67%,
+    #060407 51.93%,
+    #1b1630 72.65%,
+    #08050b 94.09%
+  );
   font-family: 'Kodchasan';
   overflow: hidden !important;
 
@@ -82,7 +84,6 @@ body::-webkit-scrollbar {
   padding: 20px 20px;
 }
 
-
 /* Navbar css ends */
 
 /* hero section css */
@@ -129,38 +130,46 @@ header {
 }
 
 .features-card {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.00) 100%);
   backdrop-filter: blur(25px);
-  border: 5px solid transparent;
-  border-image: linear-gradient(to bottom, rgba(2, 89, 77, 1), rgba(82, 61, 167, 1));
-  border-image-slice: 1;
+  border: double 1px transparent;
   font-size: 36px;
   font-weight: 400;
-  border-radius: 20px;
+  border-radius: 0.7rem;
+  position: relative;
+}
+.features-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  background: linear-gradient(
+    to bottom,
+    rgba(2, 89, 77, 1),
+    rgba(82, 61, 167, 1)
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
 }
 
 .features-grid {
   padding: 150px 15px 0px 60px;
 }
-.coming-soon{
+.coming-soon {
   text-shadow: 0 0 13px #fff;
 }
-.explore-btn{
-  border-radius: 5px ;
+.explore-btn {
+  border-radius: 5px;
   background: #513da5;
   font-size: 18px;
   font-weight: 400;
   padding: 15px 120px;
 }
-.toke-text{
+.toke-text {
   font-size: 36px;
   font-weight: 700;
 }
-
-
-
-
-
 
 /* Genesis */
 
