@@ -36,11 +36,10 @@
       <span class="text-center hidden xl:block">GROOVE</span>
       <span class="text-center hidden xl:block">MUSIC</span>
     </p>
-    <!-- container & flex are default css classes in tailwind and should not be used as custom classes -->
-    <!-- <div class="container flex"> -->
+
+
     <div class="w-full opacity-30 rounded-full bg-[#09251e] -z-1 px-20 py-5 flex justify-between items-center">
-      <!-- try to avoid generic names like logo, group etc so debugging is easier -->
-      <!-- <div class="logo"> -->
+
       <div class="w-[9rem] md:w-[11rem] h-[3rem] md:h-[4rem] z-1 flex items-center">
         <img src="./public/images/vibbe-logo.png" alt="logo" class="object-contain" />
       </div>
@@ -86,7 +85,7 @@
         <img src="./public/images/wave(4).png" alt="" class="hidden md:flex" />
         <img src="./public/images/wave(3).png" alt="" class="hidden xl:flex" />
       </div>
-      <div class="flex mt-20 items-center justify-center">
+      <div class="flex items-center justify-center">
         <p class="discover text-center font-size ">
           Discover the power of decentralized music, where artists and fans
           come together in a transparent and secure environment. Join us on
@@ -100,29 +99,70 @@
     </section>
 
 
-    <section class="overflow-hidden">
+    <section class="overflow-hidden h-[28rem] mb-40">
       <div class="h-[18.118rem] relative">
         <p class="section-bg-title">AIRDROP</p>
         <h2 class="mb-1 uppercase text-5xl text-white font-bold text-center">airdrop</h2>
-        <div class="flex items-center justify-center">
+        <div class="flex items-center justify-center my-8">
           <p class="font-size text-white text-center airdrop-text">
             Join our exclusive airdrop campaign and be part of the music
-            revolution! As a token of appreciation for your support, we're giving away free VIBBE tokens to our community members. Don't miss this opportunity to get involved in the future of music and be rewarded for your participation.
+            revolution! As a token of appreciation for your support, we're giving away free VIBBE tokens to our
+            community members. Don't miss this opportunity to get involved in the future of music and be rewarded for
+            your participation.
           </p>
         </div>
-        <button>Claim Airdrop</button>
+        <div class="flex items-center justify-center">
+          <button class="text-center claim-btn">Claim Airdrop</button>
+        </div>
       </div>
     </section>
 
-    <section class="overflow-hidden">
-      <h2>FEATURES</h2>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <section class="overflow-hidden h-[50rem]">
+      <h2 class="mb-1 uppercase text-5xl text-white font-bold text-center">features</h2>
+      <div class="h-[51.118rem] relative">
+        <p class="section-bg-title">FEATURES</p>
+        <div class="container mx-auto features-grid">
+          <div class="grid grid-cols-3 gap-14">
+
+            <div class="features-card p-4 h-[17rem] w-[24rem] flex items-center justify-center">
+              <p class="text-center">
+                Royalty Smart Contracts
+              </p>
+            </div>
+
+            
+
+            <div class="features-card p-4 h-[17rem] w-[24rem] flex items-center justify-center">
+              <p class="text-center">
+                Transparent Royalty Tracking
+              </p>
+            </div>
+
+            
+
+            <div class="features-card p-4 h-[17rem] w-[24rem] flex items-center justify-center">
+              <p class="text-center">
+                Fan Token Governance
+              </p>
+            </div>
+
+            <div class="features-card p-4 h-[17rem] w-[24rem] flex items-center justify-center">
+              <p class="text-center">
+                Decentralized Streaming
+              </p>
+            </div>
+            <div class="features-card p-4 h-[17rem] w-[24rem] flex items-center justify-center">
+              <p class="text-center">
+                Music Staking & Rewards
+              </p>
+            </div>
+            <div class="features-card p-4 h-[17rem] w-[24rem] flex items-center justify-center">
+              <p class="text-center">
+                NFTs Music Releases
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- Enobong stops here -->
@@ -134,7 +174,10 @@
           <p class="">GENESIS NFT<br />COLLECTION</p>
         </div>
         <div class="w-full h-[4.1rem] flex justify-center items-center">
-          <p class="">COMING SOON.</p>
+          <p class="coming-soon">COMING SOON.</p>
+        </div>
+        <div class="flex items-center justify-center">
+          <button class="explore-btn text-center mt-9">Explore </button>
         </div>
       </div>
     </section>
@@ -147,6 +190,12 @@
         <div class="tokenomics-graph h-[43.125rem] relative">
           <p class="section-bg-title">TOKENOMICS</p>
           <img src="../public/images/second-logo.png" alt="second-logo" class="section-logo" />
+          <div class="relative">
+            <p class="toke-text absolute">27% Token Sales</p>
+            <p class="toke-text">22% Creator Incentives</p>
+            <p class="toke-text">15% Airdrop and Campaigns</p>
+            <p class="toke-text">36% Liquidity </p>
+          </div>
         </div>
       </div>
     </section>
