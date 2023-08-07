@@ -46,6 +46,18 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+section {
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+section::-webkit-scrollbar {
+  display: none;
+}
+
 .section-bg-title {
   color: rgba(254, 254, 254, 0.07);
   font-family: 'Open Sans';
