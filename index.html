@@ -8,6 +8,7 @@
   <link rel="icon" href="../public/images/Vector.svg" />
   <link rel="stylesheet" href="./styles/index.css" />
   <link rel="stylesheet" href="./styles/locomotive-scroll.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Meta Tags -->
   <meta name="description" content="Where NFTs, Music, Blockchain Harmony Resonate." />
@@ -35,17 +36,26 @@
       <span class="text-center hidden xl:block">GROOVE</span>
       <span class="text-center hidden xl:block">MUSIC</span>
     </p>
-    <div class="w-full rounded-full bg-[#09251E] bg-opacity-30 -z-1 px-20 py-5 flex justify-between items-center">
-      <div class="w-[9rem] md:w-[11rem] h-[3rem] md:h-[4rem] z-1 flex items-center">
+    <nav
+      class="w-screen rounded-full bg-[#09251E] bg-opacity-30 -z-1 px-5 md:px-10 lg:px-20 py-3 md:py-5 flex justify-between items-center">
+      <div class="w-[5rem] md:w-[9rem] lg:w-[11rem] h-[3rem] md:h-[4rem] z-1 flex items-center">
         <img src="./public/images/vibbe-logo.png" alt="logo" class="object-contain" />
       </div>
-      <nav class="hidden lg:flex items-center space-x-14">
+
+      <!-- Desktop Nav -->
+      <div class="hidden lg:flex items-center space-x-14">
         <span><a href="">Docs</a></span>
         <span><a href="">Explore</a></span>
         <span><a href="">Community</a></span>
         <button class="nav-btn">Connect wallet</button>
-      </nav>
-    </div>
+      </div>
+
+      <!-- Mobile Nav -->
+      <div for="" class="flex lg:hidden">
+        <i class="fas fa-bars"></i>
+      </div>
+
+    </nav>
   </header>
 
   <main>
@@ -54,11 +64,13 @@
         <img src="./public/images/download (1) 1.png" alt="" class="xl:h-[32rem] xl:w-[32rem]" />
       </div>
       <div class="flex items-center justify-center space-x-5 mb-24">
-        <img src="../public/images/back-button.png" alt="backward-button" class="play" />
-        <img src="../public/images/forward-button.png" alt="forward-button" class="play" />
+        <img src="../public/images/back-button.png" alt="backward-button"
+          class="h-[3.5rem] md:h-[4.5rem] lg:h-[5.5rem]" />
+        <img src="../public/images/forward-button.png" alt="forward-button"
+          class="h-[3.5rem] md:h-[4.5rem] lg:h-[5.5rem]" />
       </div>
       <div class="flex justify-center items-center text-center">
-        <p class="w-[32rem] h-[12rem] text-4xl font-medium">
+        <p class="md:w-[32rem] md:h-[12rem] text-2xl md:text-3xl lg:text-4xl font-medium">
           Welcome to VIBBE, the innovative platform at the intersection of music and Blockchain technology.
         </p>
       </div>
@@ -66,7 +78,7 @@
 
     <section id="discover">
       <div class="flex items-center justify-center">
-        <p class=" whitespace-normal  text-center text-4xl">
+        <p class="whitespace-normal  text-center text-2xl md:text-3xl lg:text-4xl">
           "Step into a new era of music creation, powered by <br />
           the blockchain"
         </p>
@@ -80,7 +92,7 @@
         <img src="./public/images/wave(3).png" alt="" class="hidden xl:flex" />
       </div>
       <div class="flex items-center justify-center">
-        <p class="discover text-center text-4xl ">
+        <p class="discover text-center text-2xl md:text-3xl lg:text-4xl">
           Discover the power of decentralized music, where artists and fans
           come together in a transparent and secure environment. Join us on
           this revolutionary journey to reshape the music industry.
@@ -138,9 +150,9 @@
     <section id="airdrop" class="overflow-x-hidden h-[28rem] mb-40">
       <div class="h-[18.118rem] relative">
         <p class="section-bg-title">AIRDROP</p>
-        <h2 class="mb-1 uppercase text-5xl text-white font-bold text-center">airdrop</h2>
+        <h2 class="mb-1 uppercase text-4xl lg:text-5xl text-white font-bold text-center">airdrop</h2>
         <div class="flex items-center justify-center my-8">
-          <p class="text-4xl text-white text-center airdrop-text">
+          <p class="text-2xl md:text-3xl lg:text-4xl text-white text-center airdrop-text">
             Join our exclusive airdrop campaign and be part of the music
             revolution! As a token of appreciation for your support, we're giving away free VIBBE tokens to our
             community members. Don't miss this opportunity to get involved in the future of music and be rewarded for
@@ -153,38 +165,44 @@
       </div>
     </section>
 
-    <section id="features" class="overflow-x-hidden h-[50rem]">
-      <h2 class="mb-1 uppercase text-5xl text-white font-bold text-center">features</h2>
-      <div class="h-[51.118rem] relative">
+    <section id="features" class="overflow-x-hidden h-[85rem] md:h-[70rem] lg:h-[55lg:rem]">
+      <h2 class="uppercase text-4xl lg:text-5xl text-white font-bold text-center">features</h2>
+      <div class="relative">
         <p class="section-bg-title">FEATURES</p>
-        <div class="container mx-auto features-grid">
-          <div class="grid grid-cols-3 gap-14">
-            <div class="gradient-outline features-card__blur p-4 h-[17rem] w-[24rem] flex items-center justify-center">
+        <div class="features-grid text-2xl md:text-3xl lg:text-4xl -ml-5">
+          <div class="px-[2%] grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+            <div
+              class="gradient-outline features-card__blur p-3 h-[11rem] w-[15rem] md:p-4 md:h-[14rem] md:w-[19rem] lg:p-4 lg:h-[17rem] lg:w-[24rem] flex items-center justify-center">
               <p class="text-center">
                 Royalty Smart Contracts
               </p>
             </div>
-            <div class="gradient-outline features-card__blur p-4 h-[17rem] w-[24rem] flex items-center justify-center">
+            <div
+              class="gradient-outline features-card__blur p-3 h-[11rem] w-[15rem] md:p-4 md:h-[14rem] md:w-[19rem] lg:p-4 lg:h-[17rem] lg:w-[24rem] flex items-center justify-center">
               <p class="text-center">
                 Transparent Royalty Tracking
               </p>
             </div>
-            <div class="gradient-outline features-card__blur p-4 h-[17rem] w-[24rem] flex items-center justify-center">
+            <div
+              class="gradient-outline features-card__blur p-3 h-[11rem] w-[15rem] md:p-4 md:h-[14rem] md:w-[19rem] lg:p-4 lg:h-[17rem] lg:w-[24rem] flex items-center justify-center">
               <p class="text-center">
                 Fan Token Governance
               </p>
             </div>
-            <div class="gradient-outline features-card__blur p-4 h-[17rem] w-[24rem] flex items-center justify-center">
+            <div
+              class="gradient-outline features-card__blur p-3 h-[11rem] w-[15rem] md:p-4 md:h-[14rem] md:w-[19rem] lg:p-4 lg:h-[17rem] lg:w-[24rem] flex items-center justify-center">
               <p class="text-center">
                 Decentralized Streaming
               </p>
             </div>
-            <div class="gradient-outline features-card__blur p-4 h-[17rem] w-[24rem] flex items-center justify-center">
+            <div
+              class="gradient-outline features-card__blur p-3 h-[11rem] w-[15rem] md:p-4 md:h-[14rem] md:w-[19rem] lg:p-4 lg:h-[17rem] lg:w-[24rem] flex items-center justify-center">
               <p class="text-center">
                 Music Staking & Rewards
               </p>
             </div>
-            <div class="gradient-outline features-card__blur p-4 h-[17rem] w-[24rem] flex items-center justify-center">
+            <div
+              class="gradient-outline features-card__blur p-3 h-[11rem] w-[15rem] md:p-4 md:h-[14rem] md:w-[19rem] lg:p-4 lg:h-[17rem] lg:w-[24rem] flex items-center justify-center">
               <p class="text-center">
                 NFTs Music Releases
               </p>
@@ -214,30 +232,32 @@
 
     <section id="tokenomics" class="font-bold mb-[13.2rem]">
       <div class="w-full text-center overflow-x-hidden">
-        <h2 class="text-5xl uppercase">Tokenomics</h2>
+        <h2 class="text-4xl lg:text-5xl uppercase">Tokenomics</h2>
         <h3 class="text-3xl">Total Supply</h3>
         <h3 class="text-2xl text-[#c1a7cd]">10 Billion $VIBBE</h3>
         <div class="tokenomics-graph h-[43.125rem] relative">
           <p class="section-bg-title">TOKENOMICS</p>
           <img src="../public/images/second-logo.png" alt="second-logo" class="section-logo" />
-          <div class="text-4xl absolute top-[10rem] left-[15rem]">27% Token Sales</div>
-          <div class="text-4xl absolute bottom-[17rem] left-[5rem]">22% Creator Incentives</div>
-          <div class="text-4xl absolute bottom-[1.5rem] left-[12rem]">15% Airdrop and Campaigns</div>
-          <div class="text-4xl absolute bottom-[17rem] right-[15rem]">36% Liquidity </div>
+          <div class="text-2xl md:text-3xl lg:text-4xl lg:absolute top-[10rem] left-[15rem]">27% Token Sales</div>
+          <div class="text-2xl md:text-3xl lg:text-4xl lg:absolute bottom-[17rem] left-[5rem]">22% Creator Incentives
+          </div>
+          <div class="text-2xl md:text-3xl lg:text-4xl lg:absolute bottom-[1.5rem] left-[12rem]">15% Airdrop and
+            Campaigns</div>
+          <div class="text-2xl md:text-3xl lg:text-4xl lg:absolute bottom-[17rem] right-[15rem]">36% Liquidity </div>
         </div>
       </div>
     </section>
 
     <section id="roadmap" class="font-bold">
-      <h2 class="text-5xl text-center">ROADMAP</h2>
-      <div class="h-[60rem] relative overflow-hidden">
-        <div class="absolute z-10 w-full h-full flex justify-center items-end">
+      <h2 class="text-4xl lg:text-5xl text-center">ROADMAP</h2>
+      <div class="h-[30rem] md:h-[45rem] lg:h-[60rem] relative overflow-hidden">
+        <div class="absolute -z-10 md:z-0 lg:z-10 w-full h-full flex justify-center items-end">
           <div class="gradient-outline w-[95%] h-[85%]"></div>
         </div>
         <p class="section-bg-title">ROADMAP</p>
         <img src="../public/images/roadmap.png" alt="roadmap" class="section-logo" />
         <svg xmlns="http://www.w3.org/2000/svg" width="1512" height="1159" viewBox="0 0 1512 1159" fill="none"
-          class="absolute z-10 -top-52 -left-16">
+          class="absolute -z-10 md:z-0 lg:z-10 -top-52 -left-16">
           <g filter="url(#filter0_d_4_81)">
             <path
               d="M1697.48 0.999641C1662.56 36.6208 1585.23 322.674 1515.48 285.998C1445.73 249.323 1331.49 593.676 1297.98 617.499C1271.81 648.102 989.293 691.726 936.483 666.499C870.469 634.965 1072.99 905.967 998.482 952.998C923.974 1000.03 734.689 988.329 696.483 952.998C658.276 917.668 508.872 599.329 405.982 682.999C303.092 766.669 179.348 481.956 77.9825 435.999C-3.10974 399.234 -46.0258 273.508 -90.5176 285.998"
@@ -258,26 +278,26 @@
             </filter>
           </defs>
         </svg>
-        <div class="absolute top-[24rem] left-[7rem] z-20">
-          <h3 class="text-5xl">STAGE 1</h3>
-          <ul class="text-2xl">
+        <div class="lg:absolute top-[24rem] left-[7rem] z-20">
+          <h3 class="text-3xl md:text-4xl lg:text-5xl">STAGE 1</h3>
+          <ul class="text-lg md:text-xl lg:text-2xl">
             <li>Community Development</li>
             <li>Marketing & Campaigns</li>
             <li>Website Launch</li>
             <li>First Airdrop Round</li>
           </ul>
         </div>
-        <div class="absolute bottom-[7rem] right-[35rem] z-20">
-          <h3 class="text-5xl">STAGE 2</h3>
-          <ul class="text-2xl">
+        <div class="lg:absolute bottom-[7rem] right-[35rem] z-20">
+          <h3 class="text-3xl md:text-4xl lg:text-5xl">STAGE 2</h3>
+          <ul class="text-lg md:text-xl lg:text-2xl">
             <li>Public Sale</li>
             <li>Second Airdrop Round</li>
             <li>Internal dApp testing</li>
           </ul>
         </div>
-        <div class="absolute top-[24rem] right-[7rem] z-20">
-          <h3 class="text-5xl">STAGE 3</h3>
-          <ul class="text-2xl">
+        <div class="lg:absolute top-[24rem] right-[7rem] z-20">
+          <h3 class="text-3xl md:text-4xl lg:text-5xl">STAGE 3</h3>
+          <ul class="text-lg md:text-xl lg:text-2xl">
             <li>Launch of $VIBBE token</li>
             <li>Genesis NFT Mints</li>
             <li>dApp Launch</li>
@@ -292,7 +312,7 @@
           class="h-[33rem] w-[44rem] object-contain" />
       </div>
       <div class="flex justify-center items-center mb-[10.3rem]">
-        <p class="text-4xl font-light max-w-[70rem]">
+        <p class="text-2xl md:text-3xl lg:text-4xl font-light max-w-[70rem]">
           From melodies to tokens, we're hitting all the right notes in the
           world of music NFTs.
         </p>
@@ -303,8 +323,10 @@
       <div class="h-[33.125rem] relative overflow-hidden">
         <p class="section-bg-title">COMMUNITY</p>
         <div class="community-logo flex items-center justify-center">
-          <img src="../public/images/second-logo.png" alt="fourth-logo" class="h-[20.2rem] w-[20.2rem] mt-10" />
-          <img src="../public/images/third-logo.png" alt="third-logo" class="h-[7.2rem] w-[7.2rem] -ml-20" />
+          <img src="../public/images/second-logo.png" alt="fourth-logo"
+            class="hidden lg:flex h-[20.2rem] w-[20.2rem] mt-10" />
+          <img src="../public/images/third-logo.png" alt="third-logo"
+            class="h-[4.2rem] w-[4.2rem] md:h-[5.6rem] md:w-[5.6rem] lg:h-[7.2rem] lg:w-[7.2rem] lg:-ml-20" />
         </div>
         <button id="scrollArrow" class="hidden cursor-pointer z-50 fixed bottom-5 right-5 bg-black p-5 bg-opacity-50">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="52" viewBox="0 0 24 52" fill="none">
@@ -317,19 +339,19 @@
     </section>
   </main>
 
-  <footer id="footer" class="m-10 text-xl font-medium flex justify-between">
-    <div>
+  <footer id="footer" class="m-5 md:m-10 font-medium md:flex justify-between">
+    <div class="text-xs md:text-lg lg:text-xl">
       <p>© 2021 VIBBE. All Rights Reserved.</p>
     </div>
-    <div class="flex space-x-4 mr-5">
-      <div class="w-[3.2rem] h-[3.2rem] rounded-lg bg-[#513DA5] flex justify-center items-center">
-        <img src="../public/images/telegram-logo.png" alt="" class="w-[1.35rem] h-[1.25rem]" />
+    <div class="flex space-x-4 mt-5 md:mt-0 md:mr-5">
+      <div class="w-[1.6rem] h-[1.6rem] md:w-[3.2rem] md:h-[3.2rem] rounded-lg bg-[#513DA5] flex justify-center items-center">
+        <img src="../public/images/telegram-logo.png" alt="" class="w-[0.7rem] h-[0.65rem] md:w-[1.35rem] md:h-[1.25rem]" />
       </div>
-      <div class="w-[3.2rem] h-[3.2rem] rounded-lg bg-[#513DA5] flex justify-center items-center">
-        <img src="../public/images/twitter-logo.png" alt="" class="w-[1.65rem] h-[1.65rem]" />
+      <div class="w-[1.6rem] h-[1.6rem] md:w-[3.2rem] md:h-[3.2rem] rounded-lg bg-[#513DA5] flex justify-center items-center">
+        <img src="../public/images/twitter-logo.png" alt="" class="w-[0.85rem] h-[0.85rem] md:w-[1.65rem] md:h-[1.65rem]" />
       </div>
-      <div class="w-[3.2rem] h-[3.2rem] rounded-lg bg-[#513DA5] flex justify-center items-center">
-        <img src="../public/images/instagram-logo.png" alt="" class="w-[1.65rem] h-[1.65rem]" />
+      <div class="w-[1.6rem] h-[1.6rem] md:w-[3.2rem] md:h-[3.2rem] rounded-lg bg-[#513DA5] flex justify-center items-center">
+        <img src="../public/images/instagram-logo.png" alt="" class="w-[0.85rem] h-[0.85rem] md:w-[1.65rem] md:h-[1.65rem]" />
       </div>
     </div>
   </footer>
