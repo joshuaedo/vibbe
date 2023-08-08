@@ -30,7 +30,7 @@
 <body class="text-white">
 
   <!-- Enobong starts here -->
-  <header class="flex justify-center items-center overflow-x-hidden" id="navbar">
+  <header id="navbar" class="flex justify-center items-center overflow-x-hidden">
     <p class="section-bg-title mt-24">
       <span class="text-center hidden xl:block">GROOVE</span>
       <span class="text-center hidden xl:block">MUSIC</span>
@@ -43,13 +43,13 @@
         <span><a href="">Docs</a></span>
         <span><a href="">Explore</a></span>
         <span><a href="">Community</a></span>
-        <button class="btn">Connect wallet</button>
+        <button class="nav-btn">Connect wallet</button>
       </nav>
     </div>
   </header>
 
-  <main class="">
-    <section class="xl:flex justify-evenly items-center">
+  <main>
+    <section id="hero" class="xl:flex justify-evenly items-center">
       <div class="flex justify-center items-center">
         <img src="./public/images/download (1) 1.png" alt="" class="xl:h-[32rem] xl:w-[32rem]" />
       </div>
@@ -64,9 +64,9 @@
       </div>
     </section>
 
-    <section>
+    <section id="discover">
       <div class="flex items-center justify-center">
-        <p class=" whitespace-normal  text-center font-size">
+        <p class=" whitespace-normal  text-center text-4xl">
           "Step into a new era of music creation, powered by <br />
           the blockchain"
         </p>
@@ -80,64 +80,70 @@
         <img src="./public/images/wave(3).png" alt="" class="hidden xl:flex" />
       </div>
       <div class="flex items-center justify-center">
-        <p class="discover text-center font-size ">
+        <p class="discover text-center text-4xl ">
           Discover the power of decentralized music, where artists and fans
           come together in a transparent and secure environment. Join us on
           this revolutionary journey to reshape the music industry.
         </p>
       </div>
-  <!-- Wavy lines -->
+      <div class="relative">
+        <img src="./public/images/second-logo.png" alt="second-logo" class="section-logo" />
 
-  <div class="relative">
-    <img src="./public/images/second-logo.png" alt="second-logo" class="section-logo" />
+        <svg xmlns="http://www.w3.org/2000/svg" width="1512" height="446" viewBox="0 0 1512 446" fill="none"
+          class="relative bottom-[-10.46rem]">
+          <g filter="url(#filter0_d_4_80)">
+            <path
+              d="M-79.0919 341.05C-45.8302 287.507 39.3532 196.217 113.993 259.401C188.632 322.584 272.68 268.309 305.374 233.274C329.998 186.982 393.327 105.354 449.646 149.182C520.045 203.968 581.719 330.846 654.881 262.316C728.043 193.786 832.891 32.4667 874.937 91.1232C916.983 149.78 1008.92 324.564 1108.53 200.387C1208.13 76.2094 1239.91 -53.6697 1347.82 26.5671C1434.15 90.7566 1545.49 74.1699 1590.36 57.8529"
+              stroke="#00594C" stroke-width="2" />
+          </g>
+          <defs>
+            <filter id="filter0_d_4_80" x="-83.9414" y="0.806641" width="1678.64" height="444.771"
+              filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                result="hardAlpha" />
+              <feOffset dy="100" />
+              <feGaussianBlur stdDeviation="2" />
+              <feComposite in2="hardAlpha" operator="out" />
+              <feColorMatrix type="matrix" values="0 0 0 0 0.501961 0 0 0 0 0.32549 0 0 0 0 0.466667 0 0 0 1 0" />
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4_80" />
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4_80" result="shape" />
+            </filter>
+          </defs>
+        </svg>
 
-    <svg xmlns="http://www.w3.org/2000/svg" width="1512" height="446" viewBox="0 0 1512 446" fill="none"
-    class="relative bottom-[-10.46rem]">
-      <g filter="url(#filter0_d_4_80)">
-        <path d="M-79.0919 341.05C-45.8302 287.507 39.3532 196.217 113.993 259.401C188.632 322.584 272.68 268.309 305.374 233.274C329.998 186.982 393.327 105.354 449.646 149.182C520.045 203.968 581.719 330.846 654.881 262.316C728.043 193.786 832.891 32.4667 874.937 91.1232C916.983 149.78 1008.92 324.564 1108.53 200.387C1208.13 76.2094 1239.91 -53.6697 1347.82 26.5671C1434.15 90.7566 1545.49 74.1699 1590.36 57.8529" stroke="#00594C" stroke-width="2"/>
-      </g>
-      <defs>
-        <filter id="filter0_d_4_80" x="-83.9414" y="0.806641" width="1678.64" height="444.771" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-          <feOffset dy="100"/>
-          <feGaussianBlur stdDeviation="2"/>
-          <feComposite in2="hardAlpha" operator="out"/>
-          <feColorMatrix type="matrix" values="0 0 0 0 0.501961 0 0 0 0 0.32549 0 0 0 0 0.466667 0 0 0 1 0"/>
-          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4_80"/>
-          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4_80" result="shape"/>
-        </filter>
-      </defs>
-    </svg>
-  
-    <svg xmlns="http://www.w3.org/2000/svg" width="1512" height="523" viewBox="0 0 1512 523" fill="none"
-    class="relative top-[-19rem]">
-      <g filter="url(#filter0_d_4_82)">
-        <path d="M-79.4347 360.541C-8.04569 307.193 144.119 209.186 181.667 243.951C228.602 287.406 276.606 448.572 333.657 412.291C390.708 376.01 483.559 191.729 555.722 192.886C627.885 194.044 661.172 401.254 751.202 372.126C841.232 342.999 769.46 168.888 877.043 121.823C984.625 74.7581 978.517 249.787 1051.23 269.649C1123.95 289.51 1147.37 277.895 1162.91 179.286C1178.45 80.6768 1236 -39.8562 1296.54 15.3408C1357.07 70.5378 1328.6 169.618 1413.24 196.269C1497.88 222.92 1535.01 55.313 1535.41 43.6019C1535.73 34.2331 1566.47 22.0925 1581.81 17.1933" stroke="white"/>
-      </g>
-      <defs>
-        <filter id="filter0_d_4_82" x="-83.7339" y="0.947266" width="1669.69" height="521.12" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-          <feOffset dy="100"/>
-          <feGaussianBlur stdDeviation="2"/>
-          <feComposite in2="hardAlpha" operator="out"/>
-          <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
-          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4_82"/>
-          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4_82" result="shape"/>
-        </filter>
-      </defs>
-    </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="1512" height="523" viewBox="0 0 1512 523" fill="none"
+          class="relative top-[-19rem]">
+          <g filter="url(#filter0_d_4_82)">
+            <path
+              d="M-79.4347 360.541C-8.04569 307.193 144.119 209.186 181.667 243.951C228.602 287.406 276.606 448.572 333.657 412.291C390.708 376.01 483.559 191.729 555.722 192.886C627.885 194.044 661.172 401.254 751.202 372.126C841.232 342.999 769.46 168.888 877.043 121.823C984.625 74.7581 978.517 249.787 1051.23 269.649C1123.95 289.51 1147.37 277.895 1162.91 179.286C1178.45 80.6768 1236 -39.8562 1296.54 15.3408C1357.07 70.5378 1328.6 169.618 1413.24 196.269C1497.88 222.92 1535.01 55.313 1535.41 43.6019C1535.73 34.2331 1566.47 22.0925 1581.81 17.1933"
+              stroke="white" />
+          </g>
+          <defs>
+            <filter id="filter0_d_4_82" x="-83.7339" y="0.947266" width="1669.69" height="521.12"
+              filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                result="hardAlpha" />
+              <feOffset dy="100" />
+              <feGaussianBlur stdDeviation="2" />
+              <feComposite in2="hardAlpha" operator="out" />
+              <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4_82" />
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4_82" result="shape" />
+            </filter>
+          </defs>
+        </svg>
       </div>
     </section>
 
 
-    <section class="overflow-x-hidden h-[28rem] mb-40">
+    <section id="airdrop" class="overflow-x-hidden h-[28rem] mb-40">
       <div class="h-[18.118rem] relative">
         <p class="section-bg-title">AIRDROP</p>
         <h2 class="mb-1 uppercase text-5xl text-white font-bold text-center">airdrop</h2>
         <div class="flex items-center justify-center my-8">
-          <p class="font-size text-white text-center airdrop-text">
+          <p class="text-4xl text-white text-center airdrop-text">
             Join our exclusive airdrop campaign and be part of the music
             revolution! As a token of appreciation for your support, we're giving away free VIBBE tokens to our
             community members. Don't miss this opportunity to get involved in the future of music and be rewarded for
@@ -150,7 +156,7 @@
       </div>
     </section>
 
-    <section class="overflow-x-hidden h-[50rem]">
+    <section id="features" class="overflow-x-hidden h-[50rem]">
       <h2 class="mb-1 uppercase text-5xl text-white font-bold text-center">features</h2>
       <div class="h-[51.118rem] relative">
         <p class="section-bg-title">FEATURES</p>
@@ -193,7 +199,7 @@
     <!-- Enobong stops here -->
 
     <!-- Josh starts here -->
-    <section class=" font-bold my-[16rem]">
+    <section id="genesis" class=" font-bold my-[16rem]">
       <div class="w-full h-[23.2rem] text-4xl">
         <div class="flex justify-center items-center">
           <div class="genesis-nft w-[95%] h-[19rem] flex justify-center items-center">
@@ -209,7 +215,7 @@
       </div>
     </section>
 
-    <section class=" font-bold mb-[13.2rem]">
+    <section id="tokenomics" class="font-bold mb-[13.2rem]">
       <div class="w-full text-center overflow-x-hidden">
         <h2 class="text-5xl uppercase">Tokenomics</h2>
         <h3 class="text-3xl">Total Supply</h3>
@@ -217,15 +223,15 @@
         <div class="tokenomics-graph h-[43.125rem] relative">
           <p class="section-bg-title">TOKENOMICS</p>
           <img src="../public/images/second-logo.png" alt="second-logo" class="section-logo" />
-          <div class="toke-text absolute top-[10rem] left-[15rem]">27% Token Sales</div>
-          <div class="toke-text absolute bottom-[17rem] left-[5rem]">22% Creator Incentives</div>
-          <div class="toke-text absolute bottom-[1.5rem] left-[12rem]">15% Airdrop and Campaigns</div>
-          <div class="toke-text absolute bottom-[17rem] right-[15rem]">36% Liquidity </div>
+          <div class="text-4xl absolute top-[10rem] left-[15rem]">27% Token Sales</div>
+          <div class="text-4xl absolute bottom-[17rem] left-[5rem]">22% Creator Incentives</div>
+          <div class="text-4xl absolute bottom-[1.5rem] left-[12rem]">15% Airdrop and Campaigns</div>
+          <div class="text-4xl absolute bottom-[17rem] right-[15rem]">36% Liquidity </div>
         </div>
       </div>
     </section>
 
-    <section class="font-bold">
+    <section id="roadmap" class="font-bold">
       <h2 class="text-5xl text-center">ROADMAP</h2>
       <div class="h-[60rem] relative overflow-hidden">
         <div class="absolute z-10 w-full h-full flex justify-center items-end">
@@ -283,7 +289,7 @@
       </div>
     </section>
 
-    <section class="mt-40 text-center">
+    <section id="melodies" class="mt-40 text-center">
       <div class="flex justify-center items-center mb-[10.3rem]">
         <img src="../public/images/melodies-banner.png" alt="melodies-banner"
           class="h-[33rem] w-[44rem] object-contain" />
@@ -296,7 +302,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="community">
       <div class="h-[33.125rem] relative overflow-hidden">
         <p class="section-bg-title">COMMUNITY</p>
         <div class="community-logo flex items-center justify-center">
@@ -314,7 +320,7 @@
     </section>
   </main>
 
-  <footer class="m-10 text-xl font-medium flex justify-between">
+  <footer id="footer" class="m-10 text-xl font-medium flex justify-between">
     <div>
       <p>© 2021 VIBBE. All Rights Reserved.</p>
     </div>

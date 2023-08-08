@@ -1,9 +1,8 @@
+/* Tailwind Styles */
+
 /* @tailwind base;
 @tailwind components;
 @tailwind utilities; */
-
-/* font links */
-@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@300;400&family=Open+Sans:wght@800&display=swap');
 
 /* @layer components {
   .section-header {
@@ -17,6 +16,11 @@
   }
 } */
 
+/* Font Links */
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@300;400&family=Open+Sans:wght@800&display=swap');
+
+/* Global Styles */
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -24,6 +28,10 @@
 }
 
 body {
+  font-family: 'Kodchasan';
+  overflow-x: hidden !important;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   background: linear-gradient(
     135deg,
     #1b1630 24.67%,
@@ -31,28 +39,16 @@ body {
     #1b1630 72.65%,
     #08050b 94.09%
   );
-  font-family: 'Kodchasan';
-  overflow-x: hidden !important;
-
-  /* Hide scrollbar for IE, Edge and Firefox */
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
   display: none;
 }
 
 section {
   overflow: hidden !important;
-  /* Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none;
-  /* IE and Edge */
   scrollbar-width: none;
-  /* Firefox */
 }
 
 section::-webkit-scrollbar {
@@ -89,12 +85,13 @@ section::-webkit-scrollbar {
 }
 
 .gradient-outline {
-  border: double 1px transparent;
-  font-size: 36px;
+  border: double 0.0625rem transparent;
+  font-size: 2.25rem;
   font-weight: 400;
   border-radius: 0.7rem;
   position: relative;
 }
+
 .gradient-outline::before {
   content: '';
   position: absolute;
@@ -111,39 +108,26 @@ section::-webkit-scrollbar {
   mask-composite: exclude;
 }
 
-/* Navbar css starts */
+/* Navbar */
 
-.btn {
+.nav-btn {
   background-color: #513da5;
-  border-radius: 5px;
-  border: 1px solid #835978;
-  padding: 20px 20px;
+  border-radius: 0.3125rem;
+  border: 0.0625rem solid #835978;
+  padding: 1.25rem 1.25rem;
 }
 
-/* Navbar css ends */
-
-/* hero section css */
-header {
-  display: flex;
-}
+/* Hero */
 
 .play {
-  width: 89px;
-  height: 89px;
-  flex-shrink: 0;
+  width: 5.5625rem;
+  height: 5.5625rem;
 }
 
-/* hero section ends */
-
-/* header section css */
-.font-size {
-  font-size: 36px;
-  line-height: normal !important;
-  font-weight: 300;
-}
+/* Discover */
 
 .discover {
-  width: 867px;
+  width: 54.1875rem;
   margin-top: 10rem;
 }
 
@@ -151,40 +135,30 @@ header {
   position: absolute;
   transform: translate(-50%, -50%);
   right: 33%;
-  margin-top: 200px;
+  margin-top: 12.5rem;
 }
 
+/* Airdrop */
+
 .airdrop-text {
-  width: 1250px;
+  width: 78.125rem;
 }
 
 .claim-btn {
-  font-size: 18px;
+  font-size: 1.125rem;
   background-color: #513da5;
-  border-radius: 5px;
-  padding: 24px 90px;
+  border-radius: 0.3125rem;
+  padding: 1.5rem 5.625rem;
 }
+
+/* Features */
 
 .features-card__blur {
   backdrop-filter: blur(25px);
 }
 
 .features-grid {
-  padding: 150px 15px 0px 60px;
-}
-.coming-soon {
-  text-shadow: 0 0 13px #fff;
-}
-.explore-btn {
-  border-radius: 5px;
-  background: #513da5;
-  font-size: 18px;
-  font-weight: 400;
-  padding: 15px 120px;
-}
-.toke-text {
-  font-size: 2.25rem;
-  font-weight: 700;
+  padding: 9.375rem 0.9375rem 0rem 3.75rem;
 }
 
 /* Genesis */
@@ -194,6 +168,18 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+
+.coming-soon {
+  text-shadow: 0 0 0.8125rem #fff;
+}
+
+.explore-btn {
+  border-radius: 0.3125rem;
+  background: #513da5;
+  font-size: 1.125rem;
+  font-weight: 400;
+  padding: 0.9375rem 7.5rem;
 }
 
 /* Tokenomics */
