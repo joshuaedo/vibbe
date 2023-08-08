@@ -31,15 +31,12 @@
 <body class="text-white">
 
   <!-- Enobong starts here -->
-  <header class="flex justify-center items-center overflow-x-hidden">
+  <header class="flex justify-center items-center overflow-x-hidden" id="navbar">
     <p class="section-bg-title mt-24">
       <span class="text-center hidden xl:block">GROOVE</span>
       <span class="text-center hidden xl:block">MUSIC</span>
     </p>
-
-
     <div class="w-full rounded-full bg-[#09251E] bg-opacity-30 -z-1 px-20 py-5 flex justify-between items-center">
-
       <div class="w-[9rem] md:w-[11rem] h-[3rem] md:h-[4rem] z-1 flex items-center">
         <img src="./public/images/vibbe-logo.png" alt="logo" class="object-contain" />
       </div>
@@ -75,7 +72,6 @@
           the blockchain"
         </p>
       </div>
-
       <div class="flex mt-8 items-center justify-center">
         <img src="./public/images/wave (1).png" alt="" />
         <img src="./public/images/wave (2).png" alt="" class="hidden md:flex" />
@@ -91,7 +87,6 @@
           this revolutionary journey to reshape the music industry.
         </p>
       </div>
-
       <div class="flex items-center justify-center ">
         <img src="./public/images/second-logo.png" alt="second-logo" class="second-v-logo" />
       </div>
@@ -122,29 +117,21 @@
         <p class="section-bg-title">FEATURES</p>
         <div class="container mx-auto features-grid">
           <div class="grid grid-cols-3 gap-14">
-
             <div class="gradient-outline features-card__blur p-4 h-[17rem] w-[24rem] flex items-center justify-center">
               <p class="text-center">
                 Royalty Smart Contracts
               </p>
             </div>
-
-
-
             <div class="gradient-outline features-card__blur p-4 h-[17rem] w-[24rem] flex items-center justify-center">
               <p class="text-center">
                 Transparent Royalty Tracking
               </p>
             </div>
-
-
-
             <div class="gradient-outline features-card__blur p-4 h-[17rem] w-[24rem] flex items-center justify-center">
               <p class="text-center">
                 Fan Token Governance
               </p>
             </div>
-
             <div class="gradient-outline features-card__blur p-4 h-[17rem] w-[24rem] flex items-center justify-center">
               <p class="text-center">
                 Decentralized Streaming
@@ -278,7 +265,7 @@
           <img src="../public/images/third-logo.png" alt="third-logo" class="h-[7.2rem] w-[7.2rem] -ml-20" />
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="52" viewBox="0 0 24 52" fill="none"
-          class="cursor-pointer z-50 fixed bottom-5 right-5">
+          class="cursor-pointer z-50 fixed bottom-5 right-5" id="scrollArrow">
           <path
             d="M13.0607 0.939339C12.4749 0.353554 11.5251 0.353554 10.9393 0.939339L1.3934 10.4853C0.807611 11.0711 0.807611 12.0208 1.3934 12.6066C1.97919 13.1924 2.92893 13.1924 3.51472 12.6066L12 4.12132L20.4853 12.6066C21.0711 13.1924 22.0208 13.1924 22.6066 12.6066C23.1924 12.0208 23.1924 11.0711 22.6066 10.4853L13.0607 0.939339ZM13.5 52V2H10.5V52H13.5Z"
             fill="white" />
@@ -308,10 +295,21 @@
   <script src="index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
   <script>
-    (function () {
-      const locomotiveScroll = new LocomotiveScroll();
-    })();
+    const locomotiveScroll = new LocomotiveScroll();
+
+    // Get a reference to the navigation bar element by its ID
+    const $target = document.getElementById('navbar');
+
+    // Get a reference to the SVG element by its ID
+    const $scrollToTop = document.getElementById('scrollArrow');
+
+    // Add a click event listener to the SVG element
+    $scrollToTop.addEventListener('click', () => {
+      // Scroll to the target element (navbar) using Locomotive Scroll
+      locomotiveScroll.scrollTo($target);
+    });
   </script>
+
 
 </body>
 
