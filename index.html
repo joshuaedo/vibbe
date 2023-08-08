@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="./styles/index.css" />
   <link rel="stylesheet" href="./styles/locomotive-scroll.css" />
   <script src="https://cdn.tailwindcss.com"></script>
-
   <!-- Meta Tags -->
   <meta name="description" content="Where NFTs, Music, Blockchain Harmony Resonate." />
   <meta name="title" content="Vibbe" />
@@ -264,12 +263,13 @@
           <img src="../public/images/second-logo.png" alt="fourth-logo" class="h-[20.2rem] w-[20.2rem] mt-10" />
           <img src="../public/images/third-logo.png" alt="third-logo" class="h-[7.2rem] w-[7.2rem] -ml-20" />
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="52" viewBox="0 0 24 52" fill="none"
-          class="cursor-pointer z-50 fixed bottom-5 right-5" id="scrollArrow">
-          <path
-            d="M13.0607 0.939339C12.4749 0.353554 11.5251 0.353554 10.9393 0.939339L1.3934 10.4853C0.807611 11.0711 0.807611 12.0208 1.3934 12.6066C1.97919 13.1924 2.92893 13.1924 3.51472 12.6066L12 4.12132L20.4853 12.6066C21.0711 13.1924 22.0208 13.1924 22.6066 12.6066C23.1924 12.0208 23.1924 11.0711 22.6066 10.4853L13.0607 0.939339ZM13.5 52V2H10.5V52H13.5Z"
-            fill="white" />
-        </svg>
+        <button id="scrollArrow" class="hidden cursor-pointer z-50 fixed bottom-5 right-5 bg-black p-5 bg-opacity-50">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="52" viewBox="0 0 24 52" fill="none">
+            <path
+              d="M13.0607 0.939339C12.4749 0.353554 11.5251 0.353554 10.9393 0.939339L1.3934 10.4853C0.807611 11.0711 0.807611 12.0208 1.3934 12.6066C1.97919 13.1924 2.92893 13.1924 3.51472 12.6066L12 4.12132L20.4853 12.6066C21.0711 13.1924 22.0208 13.1924 22.6066 12.6066C23.1924 12.0208 23.1924 11.0711 22.6066 10.4853L13.0607 0.939339ZM13.5 52V2H10.5V52H13.5Z"
+              fill="white" />
+          </svg>
+        </button>
       </div>
     </section>
   </main>
@@ -292,24 +292,9 @@
   </footer>
   <!-- Joshua stops here -->
 
-  <script src="index.js"></script>
+  <script src="./js/index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
-  <script>
-    const locomotiveScroll = new LocomotiveScroll();
-
-    // Get a reference to the navigation bar element by its ID
-    const $target = document.getElementById('navbar');
-
-    // Get a reference to the SVG element by its ID
-    const $scrollToTop = document.getElementById('scrollArrow');
-
-    // Add a click event listener to the SVG element
-    $scrollToTop.addEventListener('click', () => {
-      // Scroll to the target element (navbar) using Locomotive Scroll
-      locomotiveScroll.scrollTo($target);
-    });
-  </script>
-
+  <script src="./js/locomotive-scroll.js"></script>
 
 </body>
 
