@@ -81,12 +81,11 @@ section::-webkit-scrollbar {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2;
+  z-index: -1;
 }
 
 .gradient-outline {
   border: double 0.0625rem transparent;
-  font-size: 2.25rem;
   font-weight: 400;
   border-radius: 0.7rem;
   position: relative;
@@ -118,11 +117,6 @@ section::-webkit-scrollbar {
 }
 
 /* Hero */
-
-.play {
-  width: 5.5625rem;
-  height: 5.5625rem;
-}
 
 /* Discover */
 
@@ -159,6 +153,9 @@ section::-webkit-scrollbar {
 
 .features-grid {
   padding: 9.375rem 0.9375rem 0rem 3.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Genesis */
