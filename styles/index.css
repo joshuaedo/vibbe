@@ -76,13 +76,17 @@ section::-webkit-scrollbar {
   }
 }
 
-.section-logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
+@media only screen and (min-width: 768px) {
+  .section-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
 }
+
+
 
 .gradient-outline {
   border: double 0.0625rem transparent;
@@ -107,6 +111,21 @@ section::-webkit-scrollbar {
   mask-composite: exclude;
 }
 
+.seection-btn {
+  font-size: 2rem;
+  background-color: #513da5;
+  border-radius: 0.3125rem;
+  padding: 1.5rem 5.625rem;
+}
+
+@media only screen and (max-width: 620px) {
+  .seection-btn {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+  }
+}
+
+
 /* Navbar */
 
 .nav-btn {
@@ -122,7 +141,6 @@ section::-webkit-scrollbar {
 
 .discover {
   width: 54.1875rem;
-  margin-top: 10rem;
 }
 
 .second-logo {
@@ -134,17 +152,6 @@ section::-webkit-scrollbar {
 
 /* Airdrop */
 
-.airdrop-text {
-  width: 78.125rem;
-}
-
-.claim-btn {
-  font-size: 1.125rem;
-  background-color: #513da5;
-  border-radius: 0.3125rem;
-  padding: 1.5rem 5.625rem;
-}
-
 /* Features */
 
 .features-card__blur {
@@ -152,7 +159,6 @@ section::-webkit-scrollbar {
 }
 
 .features-grid {
-  padding: 9.375rem 0.9375rem 0rem 3.75rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -169,14 +175,6 @@ section::-webkit-scrollbar {
 
 .coming-soon {
   text-shadow: 0 0 0.8125rem #fff;
-}
-
-.explore-btn {
-  border-radius: 0.3125rem;
-  background: #513da5;
-  font-size: 1.125rem;
-  font-weight: 400;
-  padding: 0.9375rem 7.5rem;
 }
 
 /* Tokenomics */
